@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/bcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btnColor"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_focus"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px"/>
+
+    <RelativeLayout
+        android:id="@+id/btoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/toolbar"
+        android:layout_below="@id/linearLayout_focus"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/toolbar"/>
+
+        <Button
+            android:id="@+id/bus_set"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:onClick="onBusRecordClick"
+            android:background="@drawable/settingwhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bbuttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/btoolbar"
+        android:background="@color/btnColor">
+
+        <Button
+            android:id="@+id/bus_map"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/mapbutton"
+            android:accessibilityTraversalAfter="@id/bus_set"/>
+
+        <Button
+            android:id="@+id/bus_cam"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/camerabutton"
+            android:accessibilityTraversalAfter="@id/bus_map"/>
+
+        <Button
+            android:id="@+id/bus_bus"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/buscolorbutton"
+            android:accessibilityTraversalAfter="@id/bus_cam"/>
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/bbuttonbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="104dp">
+
+            <ImageView
+                android:id="@+id/busstoptext"
+                android:layout_width="64dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/busstoptext"
+                android:accessibilityTraversalAfter="@id/bus_bus"
+                android:contentDescription="현재 정류장.조회하기버튼을 눌러주세요"/>
+
+            <TextView
+                android:id="@+id/text_thisStation"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:accessibilityLiveRegion="polite"
+                android:accessibilityTraversalAfter="@id/thisStation"/>
+
+            <Button
+                android:id="@+id/thisStation"
+                android:layout_width="68dp"
+                android:layout_height="32dp"
+                android:background="@drawable/thisstationbutton"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:accessibilityTraversalAfter="@id/busstoptext"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/underline1"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/text_thisStation"
+            android:src="@drawable/busunderline"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp">
+
+            <ImageView
+                android:id="@+id/buslisttext"
+                android:layout_width="52dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/buslisttext"
+                android:accessibilityTraversalAfter="@id/text_thisStation"
+                android:contentDescription="버스 목록.조회 버튼을 눌러주세요"/>
+
+            <TextView
+                android:id="@+id/text_thisBus"
+                android:layout_width="244dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:scrollbars = "vertical"
+                android:accessibilityLiveRegion="polite"
+                android:accessibilityTraversalAfter="@id/thisBus"
+                />
+
+            <Button
+                android:id="@+id/thisBus"
+                android:layout_width="68dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/buslistbutton"
+                android:accessibilityTraversalAfter="@id/buslisttext"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/underline2"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/text_thisStation"
+            android:src="@drawable/busunderline"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <EditText
+                android:id="@+id/edit_busno"
+                style="@style/EditTextStyle"
+                android:theme = "@style/EditTextStyle"
+                android:layout_width="252dp"
+                android:layout_height="48dp"
+                android:hint="버스 번호를 입력하세요"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:accessibilityTraversalAfter="@id/text_thisBus"/>
+
+            <Button
+                android:id="@+id/bt_input"
+                android:layout_width="56dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/insertbutton"
+                android:accessibilityTraversalAfter="@id/edit_busno"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/underline3"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@id/edit_busno"
+            android:src="@drawable/busunderline"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="64dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/nextstoptext"
+            android:accessibilityTraversalAfter="@id/bt_input" />
+        <TextView
+            android:id="@+id/text_next"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:accessibilityLiveRegion="polite"
+            android:accessibilityTraversalAfter="@id/textView3"
+            />
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="56dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/timetext"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:accessibilityTraversalAfter="@id/text_next"/>
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:accessibilityLiveRegion="polite"
+            android:accessibilityTraversalAfter="@id/textview4"
+            />
+    </LinearLayout>
+
+
+    <!--  <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="가는 방향"
+        android:textSize="20sp"
+        android:textStyle="bold" />-->
+
+    <!--<TextView
+        android:id="@+id/text_prev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20sp" />-->
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="169dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_next"-->
+            <!--android:layout_width="254dp"-->
+            <!--android:layout_height="26dp"-->
+            <!--android:layout_alignTop="@+id/textView3"-->
+            <!--android:layout_marginStart="8dp"-->
+            <!--android:layout_toEndOf="@+id/textView3"-->
+            <!--android:accessibilityTraversalAfter="@id/textView3"-->
+            <!--android:background="@drawable/busstop_textview"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/textview4"-->
+            <!--android:layout_width="92dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignStart="@+id/textView3"-->
+            <!--android:layout_marginBottom="155dp"-->
+            <!--android:accessibilityTraversalAfter="@id/text_next"-->
+            <!--android:background="@drawable/time"-->
+            <!--android:textSize="20sp"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_time"-->
+            <!--android:layout_width="365dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentStart="true"-->
+            <!--android:layout_below="@+id/textview4"-->
+            <!--android:layout_marginStart="19dp"-->
+            <!--android:layout_marginTop="-155dp"-->
+            <!--android:accessibilityTraversalAfter="@id/textview4"-->
+            <!--android:textSize="20sp" />-->
+    <!--</RelativeLayout>-->
+
+    <!--<ScrollView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_data"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_data"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

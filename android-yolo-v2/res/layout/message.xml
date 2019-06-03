@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fbackground">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/toolbar"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/toolbar"
+            />
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/iconsettings"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/buttonbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/toolbar"
+        android:background="@color/btnColor">
+
+        <Button
+            android:id="@+id/map_map"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/mapcolorbutton"/>
+
+        <Button
+            android:id="@+id/map_camera"
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/camerabutton" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/busbutton" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="73dp"
+        android:layout_above="@+id/btnWhere"
+        android:layout_below="@+id/buttonbar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:contentDescription="지도 화면"
+        android:accessibilityTraversalAfter="@id/map_bus"
+        >
+    </LinearLayout>
+
+    <Button
+        android:id="@id/btnTrack"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/trackbutt"
+
+        />
+
+    <Button
+        android:id="@id/btnWhere"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:onClick="send"
+        android:background="@drawable/sharebutton"/>
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scontainer"
+    android:background="@color/btnColor">
+
+
+    <RelativeLayout
+        android:id="@+id/stoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/toolbar"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setttext"/>
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="12dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/backbutton" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stoolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/tutotext"
+                android:layout_width="88dp"
+                android:layout_height="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:contentDescription="튜토리얼.우측에 스위치 버튼이 있습니다."
+                android:src="@drawable/tutotext"
+                android:accessibilityTraversalAfter="@id/btn_back"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_thumb"
+                android:accessibilityTraversalAfter="@id/tutotext"/>
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:src="@drawable/settunderline"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:id="@+id/soundtext"
+                android:layout_width="144dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="주변소리듣기.우측에 스위치 버튼이 있습니다."
+                android:src="@drawable/soundtext"
+                android:accessibilityTraversalAfter="@id/switch1"/>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track_selector"
+                android:accessibilityTraversalAfter="@id/soundtext"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:src="@drawable/settunderline"/>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+            <ImageView
+                android:id="@+id/gesturetext"
+                android:layout_width="96dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="바로가기.우측에 스위치 버튼이 있습니다."
+                android:src="@drawable/gesturetext"
+                android:accessibilityTraversalAfter="@id/switch2"/>
+            <Switch
+                android:id="@+id/ges_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:track="@drawable/switch_track_selector"
+                android:thumb="@drawable/switch_thumb"
+                android:accessibilityTraversalAfter="@id/gesturetext"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:src="@drawable/settunderline"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

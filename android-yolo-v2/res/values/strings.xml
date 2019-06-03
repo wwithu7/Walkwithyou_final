@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+    <string name="sharing_text">사용자의 현재 위치 정보입니다.</string>
+    <string name="share_title">Share Screenshot</string>
+    <string name="Trecord_button">주변 소리 듣기 ON OFF 스위치.바깥 소리를 이어폰을 통해 들려줍니다.</string>
+    <string name="record_button">주변 소리 듣기 스위치.</string>
+    <string name="Thome_button">메인화면으로 돌아가는 기능입니다. 메인화면에서는 다른 기능으로 넘어가는 버튼들이 있습니다.</string>
+    <string name="home_button">홈으로</string>
+    <string name="Tbus_button">버스 안내 버튼 버스안내 기능으로 넘어가는 버튼입니다.위치하고 있는 정류장으로 오는 버스를 안내하고 선택한 버스의 다음 정류장과 도착 예정 시간을 안내합니다.</string>
+    <string name="bus_button">버스 안내 버튼.</string>
+
+    <string name="Tmap_button">현재 위치 안내 버튼.현재 위치 안내 기능으로 넘어가는 버튼입니다.지도에 현재 위치를 보여주고 주소를 음성으로 안내합니다.연락처의 지인에게 사진과 함께 주소를 공유할 수 있습니다.</string>
+    <string name="map_button">현재 위치 안내</string>
+    <string name="Tsetting_button">설정 버튼.설정으로 이동하는 버튼입니다. 설정 화면에서 튜토리얼, 주변소리듣기, 제스쳐기능을 켜고 끌 수 있습니다.</string>
+    <string name="setting_button">설정</string>
+    <string name="Tmessage_button">현재 위치 공유하기 버튼.현재 위치 공유 기능으로 넘어가는 버튼입니다.지도 사진과 현재 위치하고 있는 주소를 공유하는 버튼입니다.클릭시에 팝업창이 뜨며 공유 수단과 보낼 사람을 선택하여 현재 위치를 전송할 수 있습니다.</string>
+    <string name="message_button">현재 위치 공유하기</string>
+    <string name="Tcamera_button">횡단보도 안내 버튼.횡단보도 안내 기능으로 이동하는 버튼입니다.카메라를 전면을 향해 들어 횡단보도가 존재하면 알림을 줍니다.이때 알림방식은 종로구일 경우 횡단보도의 탐지 위치를 음성으로 안내하고 그 이외 지역은 쓰리디 알림음을 제공됩니다.</string>
+    <string name="camera_button">횡단보도 안내</string>
+    <string name="Tgesture_switch">제스쳐 바로가기 ON OFF 스위치.제스쳐를 이용하여 원하는 액티비티로 바로갈 수 있습니다.두 손가락으로 원을 그리면 횡단보도 안내 기능으로, 왼쪽으로 스와이핑하면 현재 위치 기능으로, 오른쪽으로 스와이핑하면 버스 안내 기능으로 이동합니다.</string>
+
+    <string name="gesture_switch">제스쳐 바로가기 스위치.</string>
+    <string name="TthisStation">현재 정류장 검색 버튼 현재 위치 근방의 버스정류장을 가까운 순서대로 안내합니다</string>
+    <string name="thisStation">현재 정류장</string>
+    <string name="TbusList">버스 목록 검색 버튼 가장 가까운 정류장에 오는 버스 목록을 안내합니다.</string>
+    <string name="busList">버스 목록</string>
+    <string name="Tinsert">입력 버튼 탑승할 버스의 번호를 입력 후 이 버튼을 누르면 해당 노선 버스의 다음 정류장 및 도착 정보를 안내합니다.</string>
+    <string name="insert">입력</string>
+    <string name="write">탑승할 버스의 번호를 입력하세요</string>
+    <string name="Tdirection">버스가 향하는 방향을 안내합니다</string>
+    <string name="direction">가는 방향</string>
+    <string name="Tnextstop">다음 정류장 입력한 노선 버스의 다음 정류장을 안내합니다.</string>
+    <string name="nextstop">다음 정류장.</string>
+    <string name="Tremaintime">남은 시간 입력한 노선 버스의 도착까지 남은 시간을 안내합니다.</string>
+    <string name="remaintime">남은 시간</string>
+    <string name="Ttutorial">튜토리얼 ON OFF 스위치.튜토리얼을 on시키면 버튼과 화면에 대한 부가 설명이 나옵니다</string>
+    <string name="tutorial">튜토리얼</string>
+    <string name="Tsound">주변소리 듣기 ON OFF 스위치.스위치를 ON 시키면 바깥 소리를 이어폰을 통해 들려줍니다.</string>
+    <string name="sound">주변소리 듣기 스위치.</string>
+    <string name="Tback">뒤로가기 버튼.이전 화면으로 돌아가는 버튼입니다.</string>
+    <string name="back">뒤로가기</string>
+    <string name="Ttrack">위치 동기화 버튼.지도상의 현재 위치 마커를 동기화 시켜주는 버튼입니다.</string>
+    <string name="track">위치 동기화</string>
+
+    <string name="Tcamscreen">횡단보도 탐지 화면.이 화면은 카메라를 이용하여 횡단보도를 탐지하는 화면입니다.우측 상단에 설정 버튼이 있고 바로 아래에 다른 기능으로 넘어가는 3개의 버튼이 있습니다.휴대폰을 들어 앞을 향하면 전면이 자동으로 촬영이 되며 횡단보도가 탐지되면 안내를 해줍니다.</string>
+    <string name="camscreen">횡단보도 탐지 화면</string>
+
+    <string name="Tmapscreen">현재 위치 안내 화면.이 화면은 지도를 띄워주며 현 주소를 음성으로 안내하는 화면입니다.우측상단에 설정 버튼이 있고 다른 기능으로 넘어가는 바로 아래에 3개의 버튼이 있습니다 중앙 지도화면의 오른쪽에는 현재 위치 동기화 버튼이 있고 화면의 맨 아래에는 현재위치 공유버튼이 있습니다.</string>
+
+    <string name="mapscreen">현재 위치 안내 화면</string>
+    <string name="Tsettingscreen">설정 화면.이 화면은 설정 화면입니다. 좌측 상단에 이전 화면으로 이동하는 뒤로가기 버튼이 있습니다.화면 중앙쪽에는 3개의 스위치 버튼이 있습니다.</string>
+    <string name="settingscreen">설정 화면</string>
+    <string name="Tfirstscreen">메인 화면.이 화면은 처음 메인 화면입니다.화면 중앙에는 각 기능으로 넘어가는 3개의 버튼과 설정버튼이 있습니다.어느 화면에서든 핸드폰의 뒤로가기 버튼을 누르면 메인화면으로 돌아옵니다.</string>
+    <string name="firstscreen">메인 화면</string>
+    <string name="Tbusscreen">버스 안내 화면.이 화면은 버스 안내 화면입니다.우측 상단에 설정 버튼이 있고 바로 아래에 다른 기능으로 넘어가는 3개의 버튼이 있습니다.그 아래에는 정류장 정보와 버스 목록을 안내하는 버튼 두개가 있습니다 그 아래에는 버스 번호 입력창과 입력창 우측에 입력버튼이 있습니다.입력을 완료한 후 우측의 입력 버튼을 누르면 버스의 다음정류장 및 남은시간이 안내됩니다.</string>
+    <string name="busscreen">버스 안내 화면</string>
+
+    <string name="appName">Walk With You</string>
+</resources>

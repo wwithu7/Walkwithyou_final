@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="268dp"
+        android:layout_height="248dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="160dp"
+        android:src="@drawable/visual"/>
+
+    <ImageView
+        android:id="@+id/main"
+        android:layout_width="176dp"
+        android:layout_height="156dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/mainlogo"/>
+
+    <RelativeLayout
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:id="@+id/map_but"
+            android:layout_width="136dp"
+            android:layout_height="112dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/firstmapbutton"
+            android:contentDescription="@string/Tmap_button"/>
+
+        <Button
+            android:id="@+id/cam_but"
+            android:layout_width="220dp"
+            android:layout_height="112dp"
+            android:layout_alignParentRight="true"
+            android:accessibilityTraversalAfter="@id/map_but"
+            android:background="@drawable/firstcambutton"
+            android:contentDescription="@string/Tcamera_button" />
+
+        <Button
+            android:id="@+id/bus_but"
+            android:layout_width="220dp"
+            android:layout_height="112dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="32dp"
+            android:accessibilityTraversalAfter="@id/cam_but"
+            android:background="@drawable/firstbusbutton"
+            android:contentDescription="@string/Tbus_button" />
+
+        <Button
+            android:id="@+id/sett_but"
+            android:layout_width="136dp"
+            android:layout_height="112dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/firstsetbutton"
+            android:contentDescription="@string/Tsetting_button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

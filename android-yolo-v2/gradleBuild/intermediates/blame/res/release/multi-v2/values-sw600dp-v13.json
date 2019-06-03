@@ -1,0 +1,81 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\hdh97\\Desktop\\final0129 (2) (2) (2)\\FINALLL_guardians (10)\\android-yolo-v2\\gradleBuild\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\hdh97\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\c769c17c10b148c92c54e760e5fbd0a9\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,194,268,344,403,474,542",
+                        "endColumns": "68,69,73,75,58,70,67,54",
+                        "endOffsets": "119,189,263,339,398,469,537,592"
+                    },
+                    "to": {
+                        "startLines": "9,10,11,12,13,14,15,18",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "274,343,413,487,563,622,693,897",
+                        "endColumns": "68,69,73,75,58,70,67,54",
+                        "endOffsets": "338,408,482,558,617,688,756,947"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hdh97\\Desktop\\final0129 (2) (2) (2)\\FINALLL_guardians (10)\\android-yolo-v2\\res\\values-sw600dp\\template-styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "19",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "263"
+                    },
+                    "to": {
+                        "startLines": "19",
+                        "startColumns": "4",
+                        "startOffsets": "952",
+                        "endLines": "23",
+                        "endColumns": "12",
+                        "endOffsets": "1192"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hdh97\\Desktop\\final0129 (2) (2) (2)\\FINALLL_guardians (10)\\android-yolo-v2\\res\\values-sw600dp\\array.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "8",
+                        "endColumns": "19",
+                        "endOffsets": "277"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "8",
+                        "endColumns": "19",
+                        "endOffsets": "269"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hdh97\\Desktop\\final0129 (2) (2) (2)\\FINALLL_guardians (10)\\android-yolo-v2\\res\\values-sw600dp\\template-dimens.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,125",
+                        "endColumns": "67,67",
+                        "endOffsets": "119,188"
+                    },
+                    "to": {
+                        "startLines": "16,17",
+                        "startColumns": "4,4",
+                        "startOffsets": "761,829",
+                        "endColumns": "67,67",
+                        "endOffsets": "824,892"
+                    }
+                }
+            ]
+        }
+    ]
+}

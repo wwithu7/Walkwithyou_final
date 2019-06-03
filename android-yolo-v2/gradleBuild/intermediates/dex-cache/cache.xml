@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\hdh97\Desktop\final0129 (2) (2) (2)\FINALLL_guardians (10)\android-yolo-v2\gradleBuild\intermediates\transforms\desugar\release\0.jar"
+        jumboMode="false"
+        min-sdk-version="23"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7826a5bc4b50dfb429d9c8a605869c33f9f853a0">
+        <dex dex="C:\Users\hdh97\Desktop\final0129 (2) (2) (2)\FINALLL_guardians (10)\android-yolo-v2\gradleBuild\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+
+</items>
